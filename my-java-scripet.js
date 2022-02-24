@@ -188,7 +188,7 @@ var result = woodCalculator(5, 1, 1);
         return 10 * 100 + 10 * 80 + (days - 20) * 50;
     }
 }
-console.log(hotelCost(-5))
+console.log(hotelCost(10))
 
 function bricksCalculator(n) {
     if (n < 0) {
@@ -204,11 +204,28 @@ function bricksCalculator(n) {
        return 10*1000+10*1100+(n-20)*10000;
     }
  }
- console.log(bricksCalculator(10));
+ console.log(bricksCalculator(10))
+function multiFunction(name, age, task) {
+    console.log('hello ', name);
+    console.log('your age ',age);
+    task()
 
+}
+function solat() {
+    console.log('you have to solat');
+}
+multiFunction('abid', 17, solat);
 
+// arguments
+function addNumber(num, num4) {
+    sum = 0;
+    for (let i = 0; i < arguments.length; i++) {
+        let addResult = arguments[i] ;
+        sum = addResult + sum;
+    }
+    return sum;
+}
+console.log(addNumber(10, 20, 30));
 
-
-
-
+    
     
